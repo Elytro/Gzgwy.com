@@ -1,23 +1,395 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>gzgwy.com</title>
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title -->
+    <title>贵州公务员,公考报名时间,贵州省公务员考试报名入口</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- Meta tags -->
+    <meta name="keywords" content="公考,考试,行测,真题,公务员,公务员考试,公务员面试,贵州省公务员考试,贵州省考成绩查询,贵州省考成绩排名,贵州公务员笔试时间,贵州公务员笔试内容,贵州公务员招录公告,贵州公务员面试公告,贵州省考面试时间,贵州省考成绩查询,贵州公务员考试">
+    <meta name="description" content="贵州公务员(www.gzgwy.com)是贵州省知名公务员考试论坛和公务员论坛，您可以在贵州公务员论坛获得最新的公务员考试资讯、经验、资料、真题，还可以认识大量公务员朋友、交流公考学习与公务员论坛生活。提供贵州省公务员招考公告，包含报名时间、职位表、成绩查询、资格复审通知、面试公告、录用公示，提供贵州公务员考试复习资料及教材,贵州省公务员网承诺及时更新，贵州公务员笔试面试辅导班资料等。">
+    <!-- Open Graph -->
+    <meta property="og:title" content="贵州公务员,公考报名时间,贵州省公务员考试报名入口">
+    <meta property="og:type" content="WebSite">
+    <meta property="og:url" content="https://www.gzgwy.com/">
+    <meta property="og:image" content="https://apps.qtimg.com/assets/brand/873423b4a82f8e62.png">
+    <meta property="og:description" content="贵州公务员(www.gzgwy.com)是贵州省知名公务员考试论坛和公务员论坛，您可以在贵州公务员论坛获得最新的公务员考试资讯、经验、资料、真题，还可以认识大量公务员朋友、交流公考学习与公务员论坛生活。提供贵州省公务员招考公告，包含报名时间、职位表、成绩查询、资格复审通知、面试公告、录用公示，提供贵州公务员考试复习资料及教材,贵州省公务员网承诺及时更新，贵州公务员笔试面试辅导班资料等。">
+    <meta property="og:site_name" content="贵州公务员,公考报名时间,贵州省公务员考试报名入口">
+    <link href="https://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://apps.bdimg.com/libs/fontawesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
     <style>
-        body { font-family: -apple-system, "Segoe UI", sans-serif; display: flex;
-               min-height: 100vh; align-items: center; justify-content: center;
-               margin: 0; background: #f5f5f5; color: #333; }
-        .card { background: #fff; padding: 3rem 4rem; border-radius: 12px;
-                box-shadow: 0 4px 16px rgba(0,0,0,.08); text-align: center; }
-        h1 { margin: 0 0 .5rem; font-size: 1.6rem; }
-        p { margin: 0; color: #888; }
+        html, body {
+            height: 100%;
+            background: #fff;
+            font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            color: #333;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        a {
+            color: #555;
+            transition: color .2s;
+        }
+        a:hover {
+            color: #1a6eb5;
+            text-decoration: none;
+        }
+        /* 导航栏 */
+        .navbar {
+            border: none;
+            border-radius: 0;
+            background: #fff;
+            margin-bottom: 0;
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .navbar-brand {
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #1a1a1a !important;
+        }
+        .navbar-nav > li > a {
+            font-size: 14px;
+            letter-spacing: 1px;
+            color: #666 !important;
+        }
+        .navbar-nav > li > a:hover {
+            color: #1a6eb5 !important;
+            background: none !important;
+        }
+        .navbar-toggle { border-color: #ddd; }
+        .navbar-toggle .icon-bar { background: #999; }
+
+        /* 主内容伸缩填充 */
+        .main-content {
+            flex: 1 0 auto;
+        }
+
+        /* Hero */
+        .hero {
+            padding: 100px 0 70px;
+            text-align: center;
+            background: #fff;
+        }
+        .hero h1 {
+            font-size: 36px;
+            font-weight: 300;
+            letter-spacing: 4px;
+            color: #222;
+            margin-bottom: 18px;
+        }
+        .hero p {
+            font-size: 16px;
+            color: #999;
+            letter-spacing: 2px;
+            margin-bottom: 36px;
+        }
+        .hero .btn-hero {
+            display: inline-block;
+            padding: 12px 48px;
+            font-size: 15px;
+            letter-spacing: 2px;
+            color: #fff;
+            background: #1a1a1a;
+            border-radius: 2px;
+            transition: all .25s;
+            text-decoration: none;
+        }
+        .hero .btn-hero:hover {
+            background: #1a6eb5;
+            color: #fff;
+        }
+
+        /* 分割线 */
+        .divider {
+            width: 60px;
+            height: 2px;
+            background: #ddd;
+            margin: 0 auto 45px;
+        }
+
+        /* 节 */
+        .section {
+            padding: 80px 0;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 22px;
+            font-weight: 300;
+            letter-spacing: 3px;
+            color: #333;
+            margin-bottom: 12px;
+        }
+        .section-subtitle {
+            text-align: center;
+            font-size: 13px;
+            color: #aaa;
+            letter-spacing: 1px;
+            margin-bottom: 50px;
+        }
+
+        /* 特色卡片 */
+        .feature-item {
+            text-align: center;
+            padding: 35px 20px;
+        }
+        .feature-item .fa {
+            font-size: 32px;
+            color: #1a6eb5;
+            margin-bottom: 18px;
+        }
+        .feature-item h4 {
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .feature-item p {
+            font-size: 13px;
+            color: #999;
+            line-height: 1.8;
+            max-width: 240px;
+            margin: 0 auto;
+        }
+
+        /* 社群服务卡片 */
+        .service-card {
+            text-align: center;
+            padding: 30px 18px;
+            border: 1px solid #eee;
+            border-radius: 2px;
+            margin-bottom: 30px;
+            transition: box-shadow .25s;
+        }
+        .service-card:hover {
+            box-shadow: 0 4px 20px rgba(0,0,0,.06);
+        }
+        .service-card .fa {
+            font-size: 28px;
+            color: #1a6eb5;
+            margin-bottom: 15px;
+        }
+        .service-card h4 {
+            font-size: 15px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+        .service-card p {
+            font-size: 13px;
+            color: #aaa;
+            line-height: 1.7;
+        }
+
+        /* 底部 */
+        .footer {
+            background: #fafafa;
+            border-top: 1px solid #eee;
+            padding: 40px 0 28px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+        .footer .company {
+            font-size: 15px;
+            color: #555;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+        .footer .beian {
+            font-size: 12px;
+            color: #bbb;
+            line-height: 2.4;
+        }
+        .footer .beian a {
+            color: #bbb;
+        }
+        .footer .beian a:hover {
+            color: #666;
+        }
+        .footer .beian img {
+            vertical-align: -2px;
+            margin-right: 2px;
+        }
+        .footer .copyright {
+            font-size: 12px;
+            color: #ccc;
+            margin-top: 6px;
+        }
     </style>
 </head>
 <body>
-    <div class="card">
-        <h1>gzgwy.com</h1>
-        <p>Site initialized by oject.php</p>
+
+    <!-- 导航栏 -->
+    <nav class="navbar" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">贵州公务员</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home">首页</a></li>
+                    <li><a href="#services">社群</a></li>
+                    <li><a href="#features">特色</a></li>
+                    <li><a href="#contact">关于</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-content">
+
+        <!-- Hero -->
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>贵州省考·备考社群</h1>
+                <p>专注贵州公职考试 | 经验分享 · 资料共享 · 互助备考</p>
+                <a href="#services" class="btn-hero">加入社群</a>
+            </div>
+        </section>
+
+        <!-- 特色 -->
+        <section id="features" class="section">
+            <div class="container">
+                <h2 class="section-title">平台特色</h2>
+                <p class="section-subtitle">PLATFORM FEATURES</p>
+                <div class="divider"></div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="feature-item">
+                            <i class="fa fa-comments-o"></i>
+                            <h4>贵州本地考友圈</h4>
+                            <p>汇聚贵州各地市备考考生，实时交流考试动态与岗位信息</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="feature-item">
+                            <i class="fa fa-file-text-o"></i>
+                            <h4>历年真题共享</h4>
+                            <p>历年贵州省考真题与解析，行测申论全科目覆盖，考友互助整理</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="feature-item">
+                            <i class="fa fa-calendar-check-o"></i>
+                            <h4>备考计划互助</h4>
+                            <p>组队打卡学习，互相监督进度，制定个性化备考时间表</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 社群服务 -->
+        <section id="services" class="section" style="background: #fcfcfc;">
+            <div class="container">
+                <h2 class="section-title">社群服务</h2>
+                <p class="section-subtitle">COMMUNITY SERVICES</p>
+                <div class="divider"></div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-3">
+                        <div class="service-card">
+                            <i class="fa fa-weixin"></i>
+                            <h4>微信备考群</h4>
+                            <p>分地区、分科目建群，每日干货分享，随时随地交流</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="service-card">
+                            <i class="fa fa-qq"></i>
+                            <h4>QQ交流群</h4>
+                            <p>大容量社群，文件云存储，历年资料一键下载</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="service-card">
+                            <i class="fa fa-pencil-square-o"></i>
+                            <h4>申论批改小组</h4>
+                            <p>考友互评申论作文，多角度打磨写作水平</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="service-card">
+                            <i class="fa fa-trophy"></i>
+                            <h4>模考PK赛</h4>
+                            <p>定期线上模拟考试，排名激励，查漏补缺</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系我们 -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">联系我们</h2>
+                <p class="section-subtitle">CONTACT US</p>
+                <div class="divider"></div>
+                <div class="row">
+                    <div class="col-sm-4 text-center" style="margin-bottom: 20px;">
+                        <i class="fa fa-weixin" style="font-size: 28px; color: #1a6eb5; margin-bottom: 12px; display: block;"></i>
+                        <p style="font-size: 14px; color: #666;">微信公众号：贵州公考人</p>
+                    </div>
+                    <div class="col-sm-4 text-center" style="margin-bottom: 20px;">
+                        <i class="fa fa-envelope-o" style="font-size: 28px; color: #1a6eb5; margin-bottom: 12px; display: block;"></i>
+                        <p style="font-size: 14px; color: #666;">service@gzgwy.com</p>
+                    </div>
+                    <div class="col-sm-4 text-center" style="margin-bottom: 20px;">
+                        <i class="fa fa-qq" style="font-size: 28px; color: #1a6eb5; margin-bottom: 12px; display: block;"></i>
+                        <p style="font-size: 14px; color: #666;">QQ群：888-888-888</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </div>
+
+    <!-- 底部 -->
+    <footer class="footer">
+        <div class="container">
+            <p class="company">临沂市微薄利信息技术有限公司</p>
+            <p class="beian">
+                <a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow noopener">
+                    <img src="https://cdn.jsdelivr.net/gh/fz6m/icp-license@master/icon/ICP.png" width="14" height="14" alt="">
+                    鲁ICP备2025144109号-28
+                </a>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="http://www.beian.gov.cn/portal/registerSystemInfo" target="_blank" rel="nofollow noopener">
+                    <img src="https://cdn.jsdelivr.net/gh/fz6m/icp-license@master/icon/PSB.png" width="14" height="14" alt="">
+                    鲁公网安备37130202372520号
+                </a>
+            </p>
+            <p class="copyright">Copyright &copy; 2026 贵州公考人 All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script>
+        // 浏览器访问时动态更改标题
+        document.title = '临沂市微薄利信息技术有限公司';
+        // 导航栏平滑滚动
+        $(function() {
+            $('a[href*="#"]:not([href="#"])').click(function() {
+                var target = $(this.hash);
+                if (target.length) {
+                    $('html, body').animate({ scrollTop: target.offset().top - 60 }, 500);
+                    return false;
+                }
+            });
+        });
+    </script>
 </body>
 </html>
